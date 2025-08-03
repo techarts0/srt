@@ -1,0 +1,14 @@
+base_url=http://localhost/example/ws
+@xform=application/x-www-form-urlencoded
+
+@xtoken=
+
+### REGISTER
+POST {{base_url}}/user/王宝强/13980072777/123456 http/1.1
+
+### LOGIN
+GET {{base_url}}/user/13980072777/123456 http/1.1
+
+### GET USER INFO
+GET {{base_url}}/user/1 http/1.1
+Authorization: bear {{xtoken}}
